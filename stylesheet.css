@@ -48,6 +48,8 @@
 .link{
 	font-size: 0.9rem;
 	transition: 0.5s;
+	
+	color:white;
 }
 a:visited{
 	color:white;
@@ -58,6 +60,7 @@ a:visited{
 	padding-right: 40px;
 	display: inline-block;
 	transition: 0.5s;
+	color:white;
 }
 a:hover{
 	color:gray;
