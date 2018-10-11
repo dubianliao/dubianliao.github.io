@@ -17,6 +17,7 @@
 /*========================================ヘッダー*/
 .header{
 	display:none;
+	z-index: 100;
 }
 .header_resp{
 	display: block;
@@ -48,15 +49,121 @@
 	height: 80px;
 	width: 15%;
 	top: 0px;
-	right: 0px;
+	left: 0px;
 	position: absolute;
 }
+
 .fa-bars{
 	font-size: 2rem;
 }
 .header_resp_bottom{
 	display: none;
 }
+
+
+
+/****メニュー全体****/
+
+#menu1{
+	/*配置*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 100;
+}
+
+
+/****メニュー開閉ボタン****/
+#menu1 div{
+	/*デザイン*/
+	width: 15%;
+	height: 80px;
+	background: black;
+	/*配置*/
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu1 .menu1open{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:30px;
+	pointer-events: auto;
+	font-size: 1.7rem;
+}
+
+#menu1 .menu1close{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:30px;
+	pointer-events: auto;
+	font-size: 1.7rem;
+}
+
+/****メニュー一覧****/
+#menu1 ul{
+	/*アニメーション*/
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	/*デザイン*/
+	background-color: black;
+	width: 100%;
+	/*配置*/
+	position: absolute;
+	top: 81px;/*#menu1 divの高さ*/
+	left: -100%;/*#menu1 ul(メニュー一覧)の幅*/
+}
+
+#menu1 li{
+	/*デザイン*/
+	padding: 10px;
+	color: rgba(0,0,0,1);
+	border-bottom: 1px rgba(255,255,255,1) solid;
+	/*配置*/
+	pointer-events: auto;
+}
+
+/****メニューオープン時****/
+#menu1:target .menu1open{
+	/*配置*/
+	display: none;
+}
+
+#menu1:target .menu1close{
+	/*配置*/
+	display: block;
+}
+
+#menu1:target ul{
+	/*配置*/
+	left: 0;
+}
+
+
+
+
+
 /*========================================メイン_コンセプト*/
 .concept{
 	width: 100%;
@@ -97,6 +204,7 @@
 	font-family: 'Playfair Display', serif;
 	font-weight: 100;
 	letter-spacing: 4.0px;
+	font-size: 1.4rem;
 
 }
 .concept_right p{
@@ -128,6 +236,7 @@
 	font-family: 'Playfair Display', serif;
 	font-weight: 100;
 	letter-spacing: 4.0px;
+	font-size: 1.4rem;
 }
 .menu_border{
 	border-bottom: solid 2px gray;
@@ -186,6 +295,12 @@
 .access{
 	padding-top: 80px;
 }
+.access_title h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: 100;
+	letter-spacing: 4.0px;
+	font-size: 1.4rem;
+}
 
 iframe{
 	width:100%;
@@ -196,7 +311,6 @@ iframe{
 	-ms-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
 	filter: grayscale(100%);
-
 }
 .access_bottom{
 	padding-top: 40px;
@@ -247,6 +361,7 @@ iframe{
 	font-family: 'Playfair Display', serif;
 	font-weight: 100;
 	letter-spacing: 4.0px;
+	font-size: 1.4rem;
 }
 
 .reserv_border{
@@ -287,6 +402,13 @@ iframe{
 	border-bottom: solid 2px gray;
 	width:25%;
 	display: inline-block;
+}
+.recruit_title h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: 100;
+	letter-spacing: 4.0px;
+	font-size: 1.4rem;
+
 }
 
 .recruit_btn{
