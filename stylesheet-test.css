@@ -1,4 +1,124 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
 
+	text-decoration-line: none;
+}
+
+.clear{
+	clear: left;
+}
+
+
+/****メニュー全体****/
+
+#menu1{
+	/*配置*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 100;
+}
+
+
+/****メニュー開閉ボタン****/
+#menu1 div{
+	/*デザイン*/
+	width: 30%;
+	height: 80px;
+	background:;
+	/*配置*/
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu1 .menu1open{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:20%;
+  left:15%;
+	pointer-events: auto;
+	font-size: 2.5rem;
+}
+
+#menu1 .menu1close{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: none;
+
+  width: 100%;
+	height: 100%;
+	position: absolute;
+	top:20%;
+  left:;
+	pointer-events: auto;
+	font-size: 2.5rem;
+
+}
+
+/****メニュー一覧****/
+#menu1 ul{
+	/*アニメーション*/
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	/*デザイン*/
+	background-color: black;
+	width: 80%;
+  height: 100vh;
+	/*配置*/
+	position: absolute;
+	top: 0;/*#menu1 divの高さ*/
+	left: -100%;/*#menu1 ul(メニュー一覧)の幅*/
+}
+
+#menu1 li{
+	/*デザイン*/
+  line-height: 80px;
+  padding-left: 10%;
+  height: 80px;
+	color: white;
+	border-bottom: 1px rgba(255,255,255,0.5) solid;
+	/*配置*/
+	pointer-events: auto;
+  position: relative;
+}
+.link:visited{
+  color: white;
+}
+
+/****メニューオープン時****/
+#menu1:target .menu1open{
+	/*配置*/
+	display: none;
+}
+
+#menu1:target .menu1close{
+	/*配置*/
+	display: block;
+}
+
+#menu1:target ul{
+	/*配置*/
+	left: 0;
+}
 
 
 
@@ -6,18 +126,26 @@
 .image {
     position:relative;
     overflow:hidden;
+    width:100%;
     height:100vh;
     background-color: gray;
 }
 
-.image img {
+.mainpic{
     position:absolute;
     left:50%;
-    width:auto;
-    margin-left:;
+    max-width:1400px;
+    margin-left:-700px;
 
-    height: 100vh;
 }
+.kurologo{
+    height: 100px;
+    z-index: 100;
+    text-align: center;
+    position: absolute;
+}
+
+/*============================*/
 
 .about {
     position:relative;
@@ -30,6 +158,6 @@
 .about img {
     position:absolute;
     left:50%;
-    width:500px;
-    margin-left:-250px;
+    max-width:1400px;
+    margin-left:-700px;
 }
