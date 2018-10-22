@@ -40,6 +40,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration-line: none;
 }
 
 #menu1 .menu1open{
@@ -87,6 +88,8 @@
 	position: absolute;
 	top: 0;/*#menu1 divの高さ*/
 	left: -100%;/*#menu1 ul(メニュー一覧)の幅*/
+	color:white;
+	text-decoration-line: none;
 }
 
 #menu1 li{
@@ -99,9 +102,13 @@
 	/*配置*/
 	pointer-events: auto;
   position: relative;
+  text-decoration-line: none;
 }
 .link:visited{
   color: white;
+}
+.link{
+	color:white;
 }
 
 /****メニューオープン時****/
@@ -139,9 +146,16 @@
 		z-index: 1;
 
 }
+.half-black{
+	position:absolute;
+    width:100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(1,1,1,0.5);
+}
 .kurologo{
     height: 30%;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
 		position: absolute;
 		position: absolute;
@@ -154,17 +168,20 @@
 
 .yoyaku{
 
-	height: 10%;
-	width:30%;
-	background-color: red;
-	z-index: 2;
+	padding:20px 18px;
+	max-width:200px;
+	background-color: rgba(180,0,0,1);
+	z-index: 99;
 	text-align: center;
 	position: fixed;
-	top:0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	top:10px;
+	right: 10px;
 	margin:auto;
+
+
+	font-size: 1.0rem;
+	color:white;
+	line-height: 5%;
 }
 
 /*============================*/
