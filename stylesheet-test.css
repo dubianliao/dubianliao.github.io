@@ -53,9 +53,10 @@
 	height: 100%;
 	position: absolute;
 	top:20%;
-  left:15%;
+	left:15%;
 	pointer-events: auto;
 	font-size: 2.5rem;
+	text-decoration-line: none;
 }
 
 #menu1 .menu1close{
@@ -65,13 +66,14 @@
 	/*配置*/
 	display: none;
 
-  width: 100%;
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	top:20%;
-  left:;
+	left:;
 	pointer-events: auto;
 	font-size: 2.5rem;
+	text-decoration-line: none;
 
 }
 
@@ -83,7 +85,7 @@
 	/*デザイン*/
 	background-color: black;
 	width: 80%;
-  height: 100vh;
+	height: 100vh;
 	/*配置*/
 	position: absolute;
 	top: 0;/*#menu1 divの高さ*/
@@ -94,23 +96,23 @@
 
 #menu1 li{
 	/*デザイン*/
-  line-height: 80px;
-  padding-left: 10%;
-  height: 80px;
+	line-height: 80px;
+	padding-left: 10%;
+	height: 80px;
 	color: white;
 	border-bottom: 1px rgba(255,255,255,0.5) solid;
 	/*配置*/
 	pointer-events: auto;
-  position: relative;
-  text-decoration-line: none;
+	position: relative;
+	text-decoration-line: none;
 }
 .link:visited{
-  color: white;
-  text-decoration-line: none;
+	color: white;
+	text-decoration-line: none;
 }
 .link{
 	color:white;
-  text-decoration-line: none;
+	text-decoration-line: none;
 }
 
 /****メニューオープン時****/
@@ -258,14 +260,18 @@
 .about-top{
 	height:60%;
 	background-color:;
-	text-align: center;
-  width:100%;
-  padding:5% 25%;
-	box-sizing: border-box;
-
+	position: relative;
 }
 .about-top img{
+	height: 65%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
 }
+
 .about-centence{
 	line-height: 100px;
 	margin-top: ;
