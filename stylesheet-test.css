@@ -2,8 +2,11 @@
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
+	text-decoration: none;
 
-	text-decoration-line: none;
+
+
+
 }
 
 .clear{
@@ -40,7 +43,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-decoration-line: none;
+	text-decoration: none;
 }
 
 #menu1 .menu1open{
@@ -56,7 +59,7 @@
 	left:15%;
 	pointer-events: auto;
 	font-size: 2.5rem;
-	text-decoration-line: none;
+	text-decoration: none;
 }
 
 #menu1 .menu1close{
@@ -73,7 +76,7 @@
 	left:;
 	pointer-events: auto;
 	font-size: 2.5rem;
-	text-decoration-line: none;
+	text-decoration: none;
 
 }
 
@@ -91,7 +94,7 @@
 	top: 0;/*#menu1 divの高さ*/
 	left: -100%;/*#menu1 ul(メニュー一覧)の幅*/
 	color:white;
-	text-decoration-line: none;
+	text-decoration: none;
 }
 
 #menu1 li{
@@ -104,28 +107,28 @@
 	/*配置*/
 	pointer-events: auto;
 	position: relative;
-	text-decoration-line: none;
+	text-decoration: none;
 }
 .link:visited{
 	color: white;
-	text-decoration-line: none;
+	text-decoration: none;
 }
 .link{
 	color:white;
-	text-decoration-line: none;
+	text-decoration: none;
 }
 
 /****メニューオープン時****/
 #menu1:target .menu1open{
 	/*配置*/
 	display: none;
-  text-decoration-line: none;
+	text-decoration: none;
 }
 
 #menu1:target .menu1close{
 	/*配置*/
 	display: block;
-  text-decoration-line: none;
+	text-decoration: none;
 }
 
 #menu1:target ul{
@@ -137,10 +140,10 @@
 
 
 .image {
-  /*position:relative;
-  overflow:hidden;*/
-  width:100%;
-  height:100vh;
+	/*position:relative;
+	overflow:hidden;*/
+	width:100%;
+	height:100vh;
 
 	/* 画像ファイルの指定 */
 	background-image: url('public/main3.jpg');
@@ -158,7 +161,7 @@
 	background-size: cover;
 
 	/* 背景画像が読み込まれる前に表示される背景のカラー */
-	background-color: yellow;
+	background-color: black;
 }
 
 /*.mainpic{
@@ -172,21 +175,21 @@
 
 .half-black{
 	position:absolute;
-  width:100%;
-  height: 100vh;
-  z-index: 2;
-  background-color: rgba(1,1,1,0.5);
+	width:100%;
+	height: 100vh;
+	z-index: 2;
+	background-color: rgba(1,1,1,0.5);
 }
 .kurologo{
-  height: 30%;
-  z-index: 3;
-  text-align: center;
+	height: 30%;
+	z-index: 3;
+	text-align: center;
 	position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin:auto;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
 }
 
 .yoyaku{
@@ -205,6 +208,15 @@
 	font-size: 1.0rem;
 	color:white;
 	line-height: 5%;
+	text-decoration: none;
+}
+.yoyaku a:{
+	color:white;
+	text-decoration: none;
+}
+.yoyaku a:visited{
+	color:white;
+	text-decoration: none;
 }
 
 
@@ -213,9 +225,9 @@
 
 .about {
 	/*position:relative;
-  overflow:hidden;*/
-  width:100%;
-  height:100vh;
+	overflow:hidden;*/
+	width:100%;
+	height:100vh;
 
 	/* 画像ファイルの指定 */
 	background-image: url('public/about.jpg');
@@ -233,7 +245,7 @@
 	background-size: cover;
 
 	/* 背景画像が読み込まれる前に表示される背景のカラー */
-	background-color: yellow;
+	background-color: black;
 
 }
 
@@ -258,7 +270,7 @@
 	z-index: 99;
 }
 .about-top{
-	height:60%;
+	height:70%;
 	background-color:;
 	position: relative;
 }
@@ -273,10 +285,10 @@
 }
 
 .about-centence{
-	line-height: 100px;
+	line-height: 10px;
 	margin-top: ;
 	background-color: ;
-	height:40%;
+	height:30%;
 	color: white;
 	width: 100%;
 	z-index: 99;
@@ -290,3 +302,160 @@
 	background-color:rgba(255,255,255,0);
 	text-align: center;
 }
+
+
+/*============================*/
+
+.menu{	
+	width:100%;
+	height:100vh;
+
+	/* 画像ファイルの指定 */
+	background-image: url('public/p0148.jpg');
+
+	/* 画像を常に天地左右の中央に配置 */
+	background-position: center center;
+
+	/* 画像をタイル状に繰り返し表示しない */
+	background-repeat: no-repeat;
+
+	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+	background-attachment: fixed;
+
+	/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+	background-size: cover;
+
+	/* 背景画像が読み込まれる前に表示される背景のカラー */
+	background-color: black;
+
+}
+.menu-top{
+	height:40%;
+	width:100%;
+	background-image: url('public/menu.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: black;
+}
+
+
+
+
+.menu-bottom{
+	background-color: ;
+	height: 60%;
+	overflow: cover;
+}
+.menu-centence{
+	background-color: ;
+	height:;
+	width: 90%;
+	margin:0 auto;
+	text-align: center;
+
+}
+.menu-centence p{
+	padding-top: 2%;
+	font-size: 280%;
+	font-family: "ＭＳ Ｐ明朝";
+	background-color: ;
+	margin:0 auto;
+
+	writing-mode: vertical-rl;
+	line-height: 1.6;
+	letter-spacing: 5px;
+
+
+}
+
+
+.menu-pic{
+	background-color: ;
+	display: block;
+	margin:0 auto;
+	text-align: center;
+
+
+}
+.menu-pic img{
+	height: 100px;
+}
+
+/*============================*/
+
+.access{
+	width: 100%;
+	height:auto;
+	background-color: #00374b;
+	color:black;
+
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #00374b ;
+
+}
+.access_title{
+	width:100%;
+	background-color: ;
+	float: left;
+	height:auto;
+	padding-left: ;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.access_title h2{
+	font-family: "ＭＳ Ｐ明朝";
+	font-weight: 100;
+	letter-spacing: 4.0px;
+}
+
+.access_border{
+	border-bottom: solid 2px gray;
+	width:10%;
+	display: inline-block;
+}
+
+iframe{
+	width:100%;
+	height: 100vh;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+
+.access_bottom{
+	padding-top: 60px;
+	width: 100%;
+	height: auto;
+	background-color: ;
+	overflow: hidden;
+}
+.access_img{
+	width:50%;
+	float:right;
+	background-color: ;
+}
+.a-img{
+	width:70%;
+}
+.access_text{
+	width:50%;
+	padding-left: 20%;
+	padding-top: 20px;
+	font-family: "ＭＳ Ｐ明朝";
+	font-size: 1.0rem;
+	letter-spacing: 1.2px;
+}
+
+
+
