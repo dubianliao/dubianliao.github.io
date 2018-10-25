@@ -285,7 +285,7 @@
 }
 
 .about-centence{
-	line-height: 10px;
+	line-height:150%;
 	margin-top: ;
 	background-color: ;
 	height:30%;
@@ -335,7 +335,7 @@
 	background-image: url('public/menu.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: cover;
 	background-color: black;
 }
@@ -357,8 +357,8 @@
 
 }
 .menu-centence p{
-	padding-top: 2%;
-	font-size: 280%;
+	padding-top: 5%;
+	font-size: 5vh;
 	font-family: "ＭＳ Ｐ明朝";
 	background-color: ;
 	margin:0 auto;
