@@ -275,7 +275,7 @@
 	position: relative;
 }
 .about-top img{
-	height: 65%;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -414,6 +414,7 @@
 	font-family: "ＭＳ Ｐ明朝";
 	font-weight: 100;
 	letter-spacing: 4.0px;
+	color:white;
 }
 
 .access_border{
@@ -434,7 +435,7 @@ iframe{
 
 
 .access_bottom{
-	padding-top: 60px;
+	padding-top: 20px;
 	width: 100%;
 	height: auto;
 	background-color: ;
@@ -455,6 +456,8 @@ iframe{
 	font-family: "ＭＳ Ｐ明朝";
 	font-size: 1.0rem;
 	letter-spacing: 1.2px;
+	color:white;
+	line-height: 110%;
 }
 
 
