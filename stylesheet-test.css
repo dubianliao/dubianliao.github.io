@@ -354,7 +354,9 @@
 	width: 90%;
 	margin:0 auto;
 	text-align: center;
+	display: flex;
 
+	align-items: center;
 }
 .menu-centence div{
 	padding-top: ;
@@ -374,14 +376,15 @@
 .menu-pic{
 	height: 50%;
 	background-color: ;
-	display: block;
 	margin:0 auto;
 	text-align: center;
-
-
+	display: flex;
+	align-items: center;
 }
 .menu-pic img{
-	height: 50%;
+	max-height: 80%;
+	margin:0 auto;
+
 }
 
 /*============================*/
@@ -440,4 +443,51 @@ iframe{
 }
 
 
+/*============================採用*/
+
+.recruit{
+	height: 50vh;
+	width:100%;
+	background-image: url('public/recpic.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	background-color: black;
+}
+.rec-black{
+	height: 50vh;
+	width:100%;
+	background-color: rgba(1,1,1,0.5);
+
+}
+.recruit-cent{
+	color:white;
+	text-align: center;
+	
+
+}
+.recruit-btn-wrap{
+
+}
+.recruit-btn{
+
+}
+
+
+/*============================フッター*/
+
+.footer{	
+	background-color: black;
+
+}
+
+.footer div{
+	font-size: 10px;
+	text-align: center;
+	padding:10px 0;
+	color:#aaa;
+	font-family: Kaimin Sora Medium,serif;
+	letter-spacing: .1em;
+}
 
