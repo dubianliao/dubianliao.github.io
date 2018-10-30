@@ -306,7 +306,7 @@
 
 /*============================*/
 
-.menu{	
+.menu{
 	width:100%;
 	height:100vh;
 
@@ -332,7 +332,7 @@
 .menu-top{
 	height:40%;
 	width:100%;
-	background-image: url('public/menu.jpg');
+	background-image: url('public/menu2.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -429,7 +429,7 @@ iframe{
 	writing-mode: vertical-rl;
 }
 
-.access_title h2{	
+.access_title h2{
 	font-size: 5vh;
 	letter-spacing: 10px;
 }
@@ -445,31 +445,70 @@ iframe{
 
 /*============================採用*/
 
-.recruit{
-	height: 50vh;
+.rec_title{
+	height:30vh;
 	width:100%;
-	background-image: url('public/recpic.jpg');
+	background-color: brown;
+	display: table;
+}
+
+.rec_title div{
+	background-color: gray;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	background-image: url('public/p0148.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
 	background-color: black;
+
 }
+.rec-h2{
+	line-height: 1.6;
+	font-size: 5vh;
+	letter-spacing: 10px;
+	font-family: "ＭＳ Ｐ明朝";
+	/*writing-mode: vertical-rl;*/
+}
+
+
+.recruit{
+	height: 50vh;
+	width:100%;
+	background-image: url('public/recpic2.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	background-color: black;
+
+	font-family: "ＭＳ Ｐ明朝";
+}
+
+
 .rec-black{
 	height: 50vh;
 	width:100%;
 	background-color: rgba(1,1,1,0.5);
 
 }
-.rec-content{
-
+.rec-top{
+	height: 50%;
+	display: flex;
+	align-items: center;
 }
 .recruit-cent{
 	color:white;
+	margin: auto;
 	text-align: center;
-	
 
 
+}
+.rec-bottom{
+	height: 505;
 }
 .recruit-btn-wrap{
 	border-radius: 1px;
@@ -479,14 +518,14 @@ iframe{
 }
 .recruit-btn{
 	color:white;
-	padding:4px 0;
+	padding:10px 0;
 	text-align: center;
 }
 
 
 /*============================フッター*/
 
-.footer{	
+.footer{
 	background-color: black;
 
 }
@@ -499,4 +538,3 @@ iframe{
 	font-family: Kaimin Sora Medium,serif;
 	letter-spacing: .1em;
 }
-
