@@ -461,17 +461,26 @@ iframe{
 	background-color: rgba(1,1,1,0.5);
 
 }
+.rec-content{
+
+}
 .recruit-cent{
 	color:white;
 	text-align: center;
 	
 
+
 }
 .recruit-btn-wrap{
-
+	border-radius: 1px;
+	background-color: rgba(255,0,0,0.5);
+	width:70%;
+	margin: 20px auto;
 }
 .recruit-btn{
-
+	color:white;
+	padding:4px 0;
+	text-align: center;
 }
 
 
