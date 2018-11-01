@@ -146,7 +146,7 @@
 	height:100vh;
 
 	/* 画像ファイルの指定 */
-	background-image: url('public/main2.jpg');
+	background-image: url('public/main3.jpg');
 
 	/* 画像を常に天地左右の中央に配置 */
 	background-position: center center;
@@ -232,7 +232,7 @@
 	height:100vh;
 
 	/* 画像ファイルの指定 */
-	background-image: url('public/access.jpg');
+	background-image: url('public/about.jpg');
 
 	/* 画像を常に天地左右の中央に配置 */
 	background-position: center center;
