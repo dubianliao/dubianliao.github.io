@@ -146,7 +146,7 @@
 	height:100vh;
 
 	/* 画像ファイルの指定 */
-	background-image: url('public/main3.jpg');
+	background-image: url('public/main2.jpg');
 
 	/* 画像を常に天地左右の中央に配置 */
 	background-position: center center;
@@ -219,7 +219,9 @@
 	text-decoration: none;
 }
 
-
+.yoyaku-text{
+	color:white;
+}
 
 /*============================*/
 
@@ -230,7 +232,7 @@
 	height:100vh;
 
 	/* 画像ファイルの指定 */
-	background-image: url('public/about.jpg');
+	background-image: url('public/access.jpg');
 
 	/* 画像を常に天地左右の中央に配置 */
 	background-position: center center;
@@ -392,7 +394,7 @@
 .access{
 	width: 100%;
 	height:auto;
-	background-color: #00374b;
+	background-color: #000022;
 	color:black;
 
 	background-image: url('');
@@ -400,7 +402,7 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: #00374b ;
+	background-color: #000022 ;
 
 }
 
