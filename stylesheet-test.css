@@ -143,7 +143,7 @@
 	position: relative;
 }
 
-.image {		
+.image {
 	position: absolute;
 	height:100%;
 	width:100%;
@@ -369,7 +369,55 @@
 .menu-pic img{
 	max-height: 80%;
 	margin:0 auto;
+	cursor: pointer;
 
+}
+
+#overlay{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,10,20,0.8);
+	z-index: 100;
+	cursor: pointer;
+	overflow: auto;
+	padding-bottom: 50px;
+}
+.menu-li{
+	padding-top: 100px;
+	color:white;
+	font-size:2vh;
+	width:80%;
+	margin: auto;
+	background-color: ;
+	font-family: "ＭＳ Ｐ明朝";
+}
+
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+ 	.menu-li{max-width:500px;}
+}
+
+.menu-li h1{
+	text-align: center;
+}
+.li-title{
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.menu-li h2{
+}
+.price{
+	width: 100%;
+	text-align: right;
+}
+.menu-li p{
+	line-height: 3vh;
 }
 
 /*============================*/
@@ -490,6 +538,16 @@ iframe{
 	margin: auto;
 	text-align: center;
 
+	line-height:150%;
+	margin-top: ;
+	background-color: ;
+	height:30%;
+	color: white;
+	width: 100%;
+	z-index: 99;
+	font-family: "ＭＳ Ｐ明朝";
+	letter-spacing: 1.3px;
+	box-sizing: border-box;
 
 }
 .rec-bottom{

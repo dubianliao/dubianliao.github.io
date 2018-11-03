@@ -59,7 +59,7 @@ $(function(){
 			<li><a class="link" href="#recruit">採用情報</a></li>
 		</ul>
 	</div>
-</div>
+
 
 	<div class="imagea">
 		<div class="image"></div>
@@ -101,9 +101,96 @@ $(function(){
 			<div class="menu-centence">
 				<div>お料理の<br>  お品書き</div>
 			</div>
+
 			<div class="menu-pic">
-				<img id="" onclick="" src="public/menu02.jpg">
+				<img onclick="on()" src="public/menu02.jpg">
 			</div>
+
+			<div id="overlay" onclick="off()">
+				<div class="menu-li">
+					<h1>お料理</h1>
+
+					<h2 class="li-title">やきとり</h2>
+					<p>全１０種</p>
+					<h2 class="price">¥140～</h2>
+					<p>
+						純けい串（親鳥）<br>
+						若鶏もも串<br>
+						鶏首かわ串<br>
+						鶏つくね串<br>
+						その他工場直送の新鮮な串焼を提供しております。
+					</p>
+
+					<h2 class="li-title">串焼き</h2>
+					<p>全５種</p>
+					<h2 class="price">¥100～</h2>
+					<p>
+						うずら串<br>
+						豚なんこつ串<br>
+						その他　その日の仕入れによって種類が変わります。
+					</p>
+
+					<h2 class="li-title">煮込み</h2>
+					<p>全５種</p>
+					<h2 class="price">¥450～</h2>
+					<p>
+						黒松屋名物もつ煮込みを是非ご賞味ください。
+					</p>
+
+					<h2 class="li-title">おでん</h2>
+					<p>１０種～</p>
+					<h2 class="price">¥80～</h2>
+					<p>
+						結び昆布/玉子煮 /こんにゃくなど
+					</p>
+
+					<h2 class="li-title">海鮮・野菜</h2>
+					<p>全１０種</p>
+					<h2 class="price">¥300～</h2>
+					<p>
+						『本マグロの中落ち』や『〆サバ』など海鮮や<br>
+						『トマトスライス』など定番まで幅広くご用意しております。
+					</p>
+
+					<h2 class="li-title">揚げ物</h2>
+					<p>全１０種</p>
+					<h2 class="price">¥300～</h2>
+					<p>
+						当店自慢の鶏肉をつかった『若鳥の唐揚げ』は皆さま喜んでいただけます。<br>
+						『フライドポテト』等居酒屋メニューも充実しています。
+					</p>
+
+					<h2 class="li-title">〆</h2>
+					<p>全５種</p>
+					<h2 class="price">¥350～</h2>
+					<p>
+						お酒の〆には『カレーうどん』を。<br>
+						お出汁の旨味とカレーのさわやかさが染み渡ります。
+					</p>
+
+					<h2 class="li-title">甘味</h2>
+					<p>全５種</p>
+					<h2 class="price">¥300～</h2>
+					<p>
+						お口直しに。お食事の〆にも。
+					</p>
+
+
+
+				</div>
+			</div>
+
+			<script>
+				function on() {
+					document.getElementById("overlay").style.display = "block";
+				}
+
+				function off() {
+					document.getElementById("overlay").style.display = "none";
+				}
+
+			</script>
+
 		</div>
 	</div>
 	<div class="access" id="access">
