@@ -14,6 +14,87 @@
 }
 
 
+.smartphone{
+	width:100%;
+	float:right;
+	position: relative;
+}
+
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+		.smartphone{
+			width:85%;
+			position: relative;
+		}
+}
+
+.sidebar{
+	width:0;
+	display:none;
+	position: relative;
+}
+
+@media screen and (min-width:1024px){
+	.sidebar{
+		width:15%;
+		height:100vh;
+		display:block;
+		background-color: black;
+		position: fixed;
+	}
+}
+.side-pic{
+	height: 30%;
+	text-align: center;
+	background:url();
+	box-sizing: border-box;
+	padding:15% 0 0 0;
+}
+.side-pic a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.side-pic img{
+	height:100%;
+}
+
+#menu2{
+	height:50%;
+	padding-top:15%;
+}
+.li2{
+	display: block;
+	height: 50px;
+	border-bottom: solid gray 1px;
+	background-color: ;
+	line-height: 50px;
+	padding-left:;
+	text-align: center;
+	cursor: pointer;
+}
+.link1{
+	color:white;
+	font-family: "ＭＳ Ｐ明朝";
+	font-weight: bold;
+	font-size: 2.3vh;
+	letter-spacing: 1.3px;
+	width:100%;
+	height: 100%;
+	display: block;
+  text-decoration: none;
+}
+.link1:visited{
+	color:white;
+	text-decoration: none;
+}
+.li2:hover{
+	background-color:rgba(255,0,0,0.2);
+
+}
+
+
 /****メニュー全体****/
 
 #menu1{
@@ -60,6 +141,7 @@
 	pointer-events: auto;
 	font-size: 2.5rem;
 	text-decoration: none;
+
 }
 
 #menu1 .menu1close{
@@ -136,6 +218,13 @@
 	left: 0;
 }
 
+@media screen and (min-width:1024px){
+	#menu1{
+		display:none;
+	}
+}
+
+
 
 .imagea{
 	height:100vh;
@@ -204,6 +293,7 @@
 .yoyaku a:{
 	color:white;
 	text-decoration: none;
+
 }
 .yoyaku a:visited{
 	color:white;
@@ -212,6 +302,9 @@
 
 .yoyaku-text{
 	color:white;
+	display: block;
+	height: 100%;
+	width:100%;
 }
 
 /*============================*/
@@ -559,6 +652,13 @@ iframe{
 	width:70%;
 	margin: 20px auto;
 }
+
+@media screen and (min-width:1024px){
+	.recruit-btn-wrap{
+		width:400px;
+	}
+}
+
 .recruit-btn{
 	color:white;
 	padding:10px 0;
@@ -568,6 +668,9 @@ iframe{
 .btn-a{
 	color:white;
 	text-decoration: none;
+	height: 100%;
+	width:100%;
+	display:block;
 }
 .btn-a:visited{
 	color:white;
